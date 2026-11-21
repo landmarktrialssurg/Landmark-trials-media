@@ -156,3 +156,13 @@ def render(scenes, out, workdir, organ, label, footer_l, accent=TERRA, accent_in
                     "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", out], check=True)
     return total
+
+def cover(scenes, idx, out, organ, label, footer_l, t=60.0):
+    """Clean cover image (no caption) of scene idx — used as the Reel cover on Instagram and YouTube."""
+    sc = scenes[idx]
+    sc.beat_t = [(0, 0)] * 12; sc.dur = t
+    im = Image.new("RGB", (W, H), sc.bg); d = ImageDraw.Draw(im)
+    chrome(d, idx, len(scenes), (idx + 0.5) / len(scenes), organ, label, footer_l, sc.dark, sc.bg)
+    if sc.draw: sc.draw(d, t, sc, sc.bg)
+    im.save(out, quality=92)
+    return out
