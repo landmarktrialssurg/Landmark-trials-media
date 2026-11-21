@@ -2,6 +2,7 @@
 import os, subprocess, numpy as np, soundfile as sf
 
 FIX = {
+    "ɐ ˈɛs dʒˈiː ˈiː": "ˈeɪ ˈɛs dʒˈiː ˈiː",          # A S G E (letter A, not schwa)
     "koʊlstˈɑːsiz": "kˌoʊlɪstˈeɪsɪs",                 # cholestasis
     "jˈuːz": "ˌiː jˌuː ˈɛs",                          # EUS
     "hˌɛpɐtˌɑːlɪθɪˈɑːsiz": "hˌɛpɐtoʊlɪθˈaɪəsɪs",      # hepatolithiasis
