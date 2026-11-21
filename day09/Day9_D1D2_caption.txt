@@ -5,11 +5,14 @@ The Dutch D1D2 trial randomised 1,078 patients in 80 hospitals (1989-1993); 711 
 Early on, D2 looked worse: postoperative deaths 10% vs 4%, reoperations 18% vs 8%, much of it from spleen and pancreas resection.
 At 15 years: gastric-cancer-related death 37% with D2 vs 48% with D1 (P = 0.01). Overall survival 29% vs 21%, not significant.
 
+These results, and the need to stage the disease correctly, are why D2 gastrectomy is the convention. Going further adds nothing: in Japan's JCOG9501, D2 plus para-aortic (D3) dissection gave no survival advantage (5-year survival 70% vs 69% with D2).
+
 Take-home: D2 is the standard, done safely, with spleen and pancreas preserved, in experienced hands.
 
 Save this for your next gastrectomy.
 
 Ref: Songun I, Putter H, Kranenbarg EM, Sasako M, van de Velde CJ. Lancet Oncol. 2010;11(5):439-449. doi:10.1016/S1470-2045(10)70070-X
+Sasako M, et al. N Engl J Med. 2008;359(5):453-462.
 For education only. Not medical advice.
 
 #gastriccancer #gastrectomy #D2lymphadenectomy #surgicaloncology #surgicalgastroenterology
