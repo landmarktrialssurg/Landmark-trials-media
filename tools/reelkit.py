@@ -2,6 +2,7 @@
 import os, subprocess, numpy as np, soundfile as sf
 
 FIX = {
+    "dɪstˈæl": "dˈɪstəl",                            # distal (DIS-tul)
     "kˈæpɑːks": "kˈeɪpɑːks",                        # CAPOX
     "dˈoʊstæksəl": "dˌoʊsᵻtˈæksəl",                 # docetaxel
     "pˈoʊstoʊpɹətˌɪv": "pˌoʊstˈɑːpɚɹətˌɪv",          # postoperative
@@ -93,7 +94,7 @@ def render(slides, out_mp4, workdir, outro=True):
     open(f"{workdir}/v.txt", "w").write("\n".join(vl)); open(f"{workdir}/a.txt", "w").write("\n".join(al))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{workdir}/v.txt", "-c", "copy", f"{workdir}/video.mp4"], check=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{workdir}/a.txt",
-                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", f"{workdir}/vo.wav"], check=True)
+                    "-af", POST + "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", f"{workdir}/vo.wav"], check=True)
     tmp = out_mp4.replace(".mp4", ".tmp.mp4")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{workdir}/video.mp4", "-i", f"{workdir}/vo.wav", "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp], check=True)
@@ -112,9 +113,12 @@ def contact(pngs, out, cols=6, w=270, h=480):
 # ---------- Expressive narration (pitch, pace, pauses, breaths) ----------
 import re as _re
 _TAG = _re.compile(r"\[(slow|fast|up|down|pause|breath|calm)\]")
-_CYCLE = [(1.10, 1.00), (1.14, 1.025), (1.07, 0.975), (1.16, 1.015), (1.09, 0.99)]   # (speed, pitch)
+_CYCLE = [(1.06, 1.00), (1.10, 1.02), (1.03, 0.978), (1.09, 1.012), (1.05, 0.99), (1.08, 1.006)]   # (speed, pitch) — slower, more varied (21 Nov)
+# Warm, less synthetic finish: trim rumble/fizz, a touch of chest, soften 3-4 kHz edge, tiny room, gentle compression
+POST = ("highpass=f=65,lowpass=f=11500,equalizer=f=180:t=q:w=1.0:g=1.8,equalizer=f=3600:t=q:w=1.4:g=-2.5,"
+        "aecho=0.85:0.55:26|43:0.09|0.05,acompressor=threshold=-21dB:ratio=2.2:attack=6:release=90,")
 
-def _breath(sr, dur=0.34, gain=0.035):
+def _breath(sr, dur=0.30, gain=0.022):
     from scipy.signal import butter, lfilter
     n = int(dur * sr); x = np.random.default_rng(7).standard_normal(n)
     b, a = butter(2, [350 / (sr / 2), 2200 / (sr / 2)], btype="band"); x = lfilter(b, a, x)
@@ -152,7 +156,8 @@ def speak(text, workdir, idx):
         a, sr = k.create(phonemes(s), voice=V, speed=speed, lang="en-us", is_phonemes=True)
         a = _pitch(a.astype(np.float32), sr, pitch, f"{workdir}/p{idx}_{j}")
         out.append(a)
-        gap = 0.24 if s.endswith("?") else (0.14 if s.endswith(".") else 0.1)
+        _r = np.random.default_rng(idx * 31 + j)
+        gap = (0.34 if s.endswith("?") else (0.22 if s.endswith(".") else 0.12)) + float(_r.uniform(-0.04, 0.08))
         out.append(np.zeros(int(gap * sr), np.float32))
     out.append(np.zeros(int(0.2 * sr), np.float32))
     return np.concatenate(out), sr
@@ -176,7 +181,7 @@ def render_human(slides, out_mp4, workdir, outro=True):
     open(f"{workdir}/v.txt", "w").write("\n".join(vl)); open(f"{workdir}/a.txt", "w").write("\n".join(al))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{workdir}/v.txt", "-c", "copy", f"{workdir}/video.mp4"], check=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{workdir}/a.txt",
-                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", f"{workdir}/vo.wav"], check=True)
+                    "-af", POST + "loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000", f"{workdir}/vo.wav"], check=True)
     tmp = out_mp4.replace(".mp4", ".tmp.mp4")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{workdir}/video.mp4", "-i", f"{workdir}/vo.wav", "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp], check=True)

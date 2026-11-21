@@ -23,9 +23,8 @@ class Scene:
 
 # ---------------- audio ----------------
 def synth(text, idx, workdir):
-    k = reelkit._kokoro()
-    V = 0.5 * k.get_voice_style("am_michael") + 0.5 * k.get_voice_style("am_fenrir")
-    a, sr = k.create(reelkit.phonemes(text), voice=V, speed=1.12, lang="en-us", is_phonemes=True)
+    """Expressive Voice 3 (sentence-level pace/pitch variation) — same engine as the guideline Reels."""
+    a, sr = reelkit.speak(text, workdir, idx)
     return a.astype(np.float32), sr
 
 def build_audio(scenes, workdir, lead=0.35, gap=0.16, outro=True):
@@ -153,7 +152,7 @@ def render(scenes, out, workdir, organ, label, footer_l, accent=TERRA, accent_in
     with open(f"{workdir}/list.txt", "w") as fh:
         for fn in files: fh.write(f"file '{fn}'\n")
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{workdir}/list.txt",
-                    "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+                    "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", reelkit.POST + "loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", out], check=True)
     return total
 
