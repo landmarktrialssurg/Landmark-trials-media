@@ -43,13 +43,13 @@ def find_border_crop(path, thresh=40, margin=4):
     t = inner([g.getpixel((w // 2, y)) for y in range(h)]); b = inner([g.getpixel((w // 2, h - 1 - y)) for y in range(h)])
     return (l, t, w - r, h - b)
 
-def photo_slide(name, short, photo, n, total, caption, credit, tag="SURGEON STORIES", crop=None):
+def photo_slide(name, short, photo, n, total, caption, credit, tag="SURGEON STORIES", crop=None, box_h=860):
     """Last slide: the same portrait shown whole (original tones), with the source's credit line."""
     series = "Nobel Laureates" if tag == "NOBEL LAUREATES" else "Surgeon Stories"
     im, d = slide("PHOTO", n, total, short or name.split()[-1], series)
     p = Image.open(photo).convert("RGB")
     if crop: p = p.crop(crop)
-    box_w, box_h = MW, 860
+    box_w = MW
     p = ImageOps.contain(p, (box_w, box_h), method=Image.LANCZOS)
     pw, ph = p.size; px = (W - pw) // 2; py = 170
     d.rounded_rectangle([px - 10, py - 10, px + pw + 10, py + ph + 10], 30, fill=CARD, outline=RULE, width=3)
