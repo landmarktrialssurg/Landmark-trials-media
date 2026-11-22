@@ -1,0 +1,16 @@
+Operable gastric cancer: surgery first, or chemotherapy first?
+
+MAGIC (UK Medical Research Council) randomised 503 patients with resectable adenocarcinoma of the stomach, gastro-oesophageal junction or lower oesophagus: 250 to 3 cycles of ECF before and 3 after surgery, 253 to surgery alone.
+
+5-year overall survival: 36% vs 23% (HR 0.75, 95% CI 0.60-0.93, P = 0.009). Progression-free survival also improved (HR 0.66, P < 0.001), and tumours were smaller and downstaged at surgery.
+
+The catch: only 104 of 250 patients completed all six cycles. The postoperative half was the weak link, and FLOT (FLOT4) later replaced ECF.
+
+Take-home: for resectable gastric cancer, chemotherapy starts before the operation.
+
+Save this for your next tumour board.
+
+Ref: Cunningham D, Allum WH, Stenning SP, et al. N Engl J Med. 2006;355(1):11-20. doi:10.1056/NEJMoa055531
+For education only. Not medical advice.
+
+#gastriccancer #MAGICtrial #perioperativechemotherapy #surgicaloncology #surgicalgastroenterology

@@ -1,0 +1,18 @@
+Resectable gastric cancer: chemotherapy alone is no longer the preferred option in the new ESMO guideline.
+
+ESMO's 2026 guideline now covers gastric and oesophageal cancer together and replaces the 2022 gastric guideline. For the stomach:
+
+1. Staging: endoscopy with biopsies and CT thorax, abdomen and pelvis. Diagnostic laparoscopy (with or without washings) for perioperative chemo candidates. PET not routine in gastric cancer.
+2. Biomarkers on every tumour: HER2, PD-L1, MSI/dMMR, claudin 18.2.
+3. Surgery: ESD for suitable early cancers; D2 gastrectomy in high-volume centres; laparoscopy an option in expert hands.
+4. cT2+ or node-positive: perioperative FLOT, with durvalumab plus maintenance preferred where available (MATTERHORN).
+5. Junction/oesophageal adenocarcinoma: FLOT over CROSS (ESOPEC); adjuvant nivolumab for PD-L1 positive residual disease.
+
+Pairs with today's trial: MAGIC.
+
+Save this for your next tumour board.
+
+Ref: Al-Batran S-E, et al. Gastric and oesophageal cancer: ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up. Ann Oncol. Published online 15 Oct 2026.
+For education only. Not medical advice.
+
+#gastriccancer #ESMO #FLOT #surgicaloncology #surgicalgastroenterology
