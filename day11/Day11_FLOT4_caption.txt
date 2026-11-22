@@ -1,0 +1,16 @@
+Still giving ECF before gastrectomy? FLOT added 15 months of median survival.
+
+FLOT4 (Lancet 2019) randomised 716 patients with resectable gastric or junction adenocarcinoma (cT2 or higher, or node-positive) in 38 German centres: 356 to FLOT (4 cycles before and 4 after surgery), 360 to ECF or ECX (3 before and 3 after).
+
+Median overall survival: 50 vs 35 months (HR 0.77, 95% CI 0.63-0.94, P = 0.012).
+Disease-free survival: 30 vs 18 months. R0 resection: 85% vs 78%.
+Serious treatment-related adverse events: 27% in both arms.
+
+Take-home: FLOT replaced ECF as the perioperative standard, and became the backbone for adding durvalumab in MATTERHORN.
+
+Save this for your next tumour board.
+
+Ref: Al-Batran S-E, Homann N, Pauligk C, et al. Lancet. 2019;393(10184):1948-1957. doi:10.1016/S0140-6736(18)32557-1
+For education only. Not medical advice.
+
+#gastriccancer #FLOT #perioperativechemotherapy #surgicaloncology #surgicalgastroenterology
