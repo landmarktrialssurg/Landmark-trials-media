@@ -1,0 +1,2 @@
+FLOT4: FLOT4 trial, FLOT chemotherapy, gastric cancer chemotherapy, perioperative chemotherapy, gastric cancer trial, gastrectomy, surgical oncology, surgical gastroenterology, DrNB surgical gastroenterology, NEET SS surgery
+NCCN: NCCN gastric cancer guidelines, gastric cancer guideline 2026, gastric cancer staging, D2 lymphadenectomy, gastrectomy lymph nodes, perioperative FLOT durvalumab, surgical oncology, surgical gastroenterology, NEET SS surgery, DrNB surgical gastroenterology

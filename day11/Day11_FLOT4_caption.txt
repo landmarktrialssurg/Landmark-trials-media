@@ -1,4 +1,4 @@
-Still giving ECF before gastrectomy? FLOT added 15 months of median survival.
+Gastric cancer trial: still giving ECF before gastrectomy? FLOT added 15 months of median survival.
 
 FLOT4 (Lancet 2019) randomised 716 patients with resectable gastric or junction adenocarcinoma (cT2 or higher, or node-positive) in 38 German centres: 356 to FLOT (4 cycles before and 4 after surgery), 360 to ECF or ECX (3 before and 3 after).
 
@@ -13,4 +13,4 @@ Save this for your next tumour board.
 Ref: Al-Batran S-E, Homann N, Pauligk C, et al. Lancet. 2019;393(10184):1948-1957. doi:10.1016/S0140-6736(18)32557-1
 For education only. Not medical advice.
 
-#gastriccancer #FLOT #perioperativechemotherapy #surgicaloncology #surgicalgastroenterology
+#gastriccancer #FLOT4trial #surgicaloncology #surgeryresidents #landmarktrialssurg

@@ -1,0 +1,19 @@
+Gastric cancer guideline: you can't call it staged without 16 lymph nodes.
+
+NCCN Guidelines: Gastric Cancer (Version 2.2026), the essentials:
+
+1. Workup: CT chest and abdomen (pelvis as needed); PET-CT for locally advanced or metastatic disease; EUS when early vs advanced is unclear; diagnostic laparoscopy with cytology for locally advanced disease.
+2. Biomarkers: MSI/MMR for every new patient; HER2, PD-L1 and claudin 18.2 if advanced disease is suspected.
+3. Surgery: high-volume centres (15-20 gastrectomies a year or more); at least 16 nodes removed and examined; D2 (over 30 nodes) in experienced centres.
+4. Perioperative: FLOT preferred; add durvalumab for PD-L1 positive, node-positive or non-diffuse tumours. MSI-high: checkpoint inhibitors without chemo may be used.
+5. Surgery first: after a D2 (30 nodes or more), chemo alone (CAPOX or FOLFOX); fewer than 30 nodes, chemo then chemoradiation.
+6. Metastatic: biomarker-matched first line; generally no surgery.
+
+Pairs with today's trial: FLOT4.
+
+Subscribe for a landmark surgical trial every day.
+
+Ref: NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer. Version 2.2026. National Comprehensive Cancer Network; 2026.
+For education only. Not medical advice.
+
+#Shorts #gastriccancer #surgery
