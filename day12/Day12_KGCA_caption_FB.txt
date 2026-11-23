@@ -1,0 +1,19 @@
+Gastric cancer guideline: you still take the spleen for hilar nodes? Korea's 2024 guideline says no.
+
+Korean Practice Guidelines for Gastric Cancer 2024 (KGCA, J Gastric Cancer 2025; 5th edition, GRADE):
+
+1. Early cancer: endoscopic resection for well or moderately differentiated early cancers; ESD or gastrectomy for expanded indications; surgery if non-curative; eradicate H. pylori to prevent a second cancer.
+2. Extent: D1+ for cT1N0; pylorus-preserving gastrectomy if 5 cm or more from the pylorus; proximal gastrectomy with double-tract reconstruction for upper-third early cancer.
+3. Advanced cancer: no prophylactic splenectomy for hilar nodes (strong against, high-quality evidence); Siewert II/III: transhiatal rather than transthoracic.
+4. Laparoscopic distal gastrectomy for stage I and for locally advanced cancer; robotic gastrectomy an option.
+5. Adjuvant S-1 or CAPOX after D2 for stage II/III; no adjuvant chemoradiation; neoadjuvant chemo can be considered.
+6. Stage IV: trastuzumab (HER2+), anti-PD-1 with chemo (HER2-), zolbetuximab (claudin 18.2+); no reduction gastrectomy.
+
+Pairs with today's trial: MATTERHORN.
+
+Save this for your next tumour board.
+
+Ref: Korean Practice Guidelines for Gastric Cancer 2024: An Evidence-based, Multidisciplinary Approach (Update of 2022 Guideline). J Gastric Cancer. 2025;25(1):5-114. doi:10.5230/jgc.2025.25.e11
+For education only. Not medical advice.
+
+#gastriccancer #gastrectomy #laparoscopicsurgery
