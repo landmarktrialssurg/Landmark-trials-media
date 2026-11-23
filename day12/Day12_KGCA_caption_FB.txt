@@ -7,7 +7,7 @@ Korean Practice Guidelines for Gastric Cancer 2024 (KGCA, J Gastric Cancer 2025;
 3. Advanced cancer: no prophylactic splenectomy for hilar nodes (strong against, high-quality evidence); Siewert II/III: transhiatal rather than transthoracic.
 4. Laparoscopic distal gastrectomy for stage I and for locally advanced cancer; robotic gastrectomy an option.
 5. Adjuvant S-1 or CAPOX after D2 for stage II/III; no adjuvant chemoradiation; neoadjuvant chemo can be considered.
-6. Stage IV: trastuzumab (HER2+), anti-PD-1 with chemo (HER2-), zolbetuximab (claudin 18.2+); no reduction gastrectomy.
+6. Stage IV: trastuzumab (HER2+), anti-PD-1 with chemo (HER2-), zolbetuximab (claudin 18.2+); no reduction gastrectomy; conversion surgery for limited metastasis is investigational.
 
 Pairs with today's trial: MATTERHORN.
 
